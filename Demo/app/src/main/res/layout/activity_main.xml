@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/myRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/ukFlag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="UK" />
+
+            <RadioButton
+                android:id="@+id/itFlag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IT" />
+
+            <RadioButton
+                android:id="@+id/esFlag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ES" />
+
+            <RadioButton
+                android:id="@+id/frFlag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FR" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/flagImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/uk" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/textFlag"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:focusable="true"
+            android:scrollbars="vertical"
+            android:text="@string/UK"
+            android:textSize="12sp" />
+    </ScrollView>
+
+</LinearLayout>
